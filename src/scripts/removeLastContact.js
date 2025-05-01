@@ -8,6 +8,7 @@ export const removeLastContact = async () => {
       return;
     }
     newContacts.pop();
+
     await writeContacts(newContacts);
   } catch (error) {
     console.log(error);
@@ -15,3 +16,4 @@ export const removeLastContact = async () => {
 };
 
 removeLastContact();
+//node src/scripts/removeLastContact.js
